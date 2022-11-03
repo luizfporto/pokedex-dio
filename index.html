@@ -25,6 +25,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/pokedex.css" />
 
   </head>
   <body>
@@ -32,59 +33,20 @@
     <section class="content">
       <h1>Pokedex</h1>
 
-      <ol class="pokemons">
-        <li class="grass">
-          Bulbasaur
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">
-        </li>
-        <li class="grass">
-          Ivisaur
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg" alt="Ivisaur">
-        </li>
-        <li class="grass">
-          Vensaur
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg" alt="Vensaur">
-        </li>
-        <li class="fire">
-          Charmander
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg" alt="Charmander">
-        </li>
-        <li class="fire">
-          Charmeleon
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/5.svg" alt="Charmeleon">
-        </li>
-        <li class="fire">
-          Charizard
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg" alt="Charizard">
-        </li>
-        <li class="water">
-          Squirtle
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/7.svg" alt="Squirtle">
-        </li>
-        <li class="water">
-          Wartortle
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/8.svg" alt="Wartortle">
-        </li>
-        <li class="water">
-          Blastoise
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/9.svg" alt="Blastoise">
-        </li>
-        <li class="eletric">
-          Pichu
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/172.svg" alt="Pichu">
-        </li>
-        <li class="eletric">
-          Pikachu
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg" alt="Pikachu">
-        </li> 
-        <li class="eletric">
-          Raichu
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/26.svg" alt="Raichu">
-        </li>
+      <ol id="pokemonList" class="pokemons">
+          <!-- ..... Pokemons here ..... -->
       </ol>
-    </section>
 
-    <!-- JS -->
-    <script src="assets/js/main.js"></script>
+      <div class="pagination">
+          <button id="loadMoreButton" type="button">
+              Carregar Mais
+          </button>
+      </div>
+  </section>
+
+  <!-- Nosso JS -->
+  <script src="/assets/js/pokemon-model.js"></script>
+  <script src="/assets/js/poke-api.js"></script>
+  <script src="/assets/js/main.js"></script>
   </body>
 </html>
